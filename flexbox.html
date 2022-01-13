@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .containar {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        border: 1px dotted black;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        font-size: 3em;
+        border: 2px solid black;
+      }
+      /* box-containar */
+      .box-containar {
+        width: 100%;
+        height: 1600px;
+        display: flex;
+        align-items: center;
+        border: 4px double black;
+      }
+      .bod {
+        width: 550px;
+        height: 850px;
+        font-size: 2em;
+        border: 3px dotted brown;
+      }
+      #box {
+        order: 2;
+      }
+      #box 2 {
+        order: 1;
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am flexible right now</h1>
+    <div class="containar">
+      <div class="box">box 1</div>
+      <div class="box">box 2</div>
+      <div class="box">box 3</div>
+    </div>
+    <!-- second secto -->
+    <div class="box-containar">
+      <div id="box 1" class="bod 1">box 1</div>
+      <div id="box 2" class="bod 2">box 2</div>
+    </div>
+  </body>
+</html>
